@@ -40,7 +40,7 @@ class NestedSet
     {
         $table->unsignedInteger(self::LFT)->default(0);
         $table->unsignedInteger(self::RGT)->default(0);
-        $table->unsignedInteger(self::PARENT_ID)->nullable();
+        $table->unsignedBigInteger(self::PARENT_ID)->nullable();
 
         $table->index(static::getDefaultColumns());
     }
